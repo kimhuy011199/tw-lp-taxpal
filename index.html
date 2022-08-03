@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>TaxPal - Accounting made simple for small businesses.</title>
+  </head>
+  <body class="bg-white font-body font-light leading-relaxed text-gray4">
+    <header class="header">
+      <nav class="nav">
+        <a href="/">
+          <img class="nav-logo" src="/assets/icons/logo.svg" alt="TaxPal" />
+        </a>
+        <div>
+          <button class="md:hidden">
+            <img
+              class="h-6 w-6"
+              id="nav-btn"
+              src="/assets/icons/menu.svg"
+              alt="Navigate button"
+            />
+          </button>
+          <div>
+            <div class="nav-list-container hidden md:block">
+              <ul class="nav-list">
+                {{#each nav}}
+                <li class="nav-item">
+                  <a class="nav-link" href="{{link}}">{{text}}</a>
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+            <div class="backdrop hidden"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="intro-section" data-aos="fade-up">
+        <h1 class="page-title">
+          Accounting
+          <span class="intro-highlight"
+            ><span>made simple</span
+            ><img
+              class="intro-line"
+              src="/assets/icons/header-line.svg"
+              alt="line"
+          /></span>
+          for small businesses.
+        </h1>
+        <p class="section-desc intro-desc">
+          Most bookkeeping software is accurate, but hard to use. We make the
+          opposite trade-off, and hope you don't get audited.
+        </p>
+        <div class="intro-action">
+          <button class="btn btn-primary">Get 6 months free</button>
+          <button class="btn btn-outline">Watch video</button>
+        </div>
+      </section>
+      <section class="company-section" data-aos="fade-up">
+        <p class="company-title">Trusted by these six companies so far</p>
+        <div class="">
+          <ul class="company-list">
+            {{#each companies}}
+            <li>
+              <img src="{{img}}" alt="{{alt}}" />
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </section>
+      <section class="section app-section" data-aos="fade-up">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Everything to run your business.</h2>
+            <p class="section-desc">
+              Well everything you need if you aren't that picky about minor
+              details like tax compliance.
+            </p>
+          </div>
+          <div class="app-body">
+            <div class="sm:col-span-5">
+              <ul class="app-list">
+                {{#each app}}
+                <li class="app-item" id="{{id}}">
+                  <h3 class="app-title">{{title}}</h3>
+                  <p class="app-text">{{content}}</p>
+                  <div class="app-item-bg {{#if first}}active{{/if}}"></div>
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+            <div class="sm:col-span-7">
+              <div class="app-img-wrapper">
+                <img class="app-img" src="/assets/images/app-1.png" alt="App" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section features-section" data-aos="fade-up">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Simplify everyday business tasks.</h2>
+            <p class="section-desc">
+              Because you'd probably be a little confused if we suggested you
+              complicate your everyday business tasks instead.
+            </p>
+          </div>
+          <div class="features-body">
+            <ul class="features-list">
+              {{#each features}}
+              <li class="features-item">
+                <img class="features-icon" src="{{img}}" alt="{{title}}" />
+                <h3 class="features-title">{{title}}</h3>
+                <p class="features-text">{{content}}</p>
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section prices-section" data-aos="fade-up">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="prices-highlight"
+                ><span>Simple pricing</span
+                ><img
+                  class="prices-line"
+                  src="/assets/icons/price-line.svg"
+                  alt="line"
+              /></span>
+              for everyone.
+            </h2>
+            <p class="section-desc prices-desc">
+              It doesn't matter what size your business is, our software won't
+              work well for you.
+            </p>
+          </div>
+          <div class="prices-body">
+            <ul class="prices-list">
+              {{#each prices}}
+              <li class="prices-item {{#if active}} active {{/if}}">
+                <span class="prices-price">{{price}}</span>
+                <h3 class="prices-title">{{title}}</h3>
+                <p class="prices-text">{{text}}</p>
+                <button class="btn prices-btn">{{btn}}</button>
+                <ul class="prices-sub-list">
+                  {{#each list}}
+                  <li class="flex">
+                    <img
+                      class="prices-check"
+                      src="/assets/icons/check.svg"
+                      alt="{{item}}"
+                    />
+                    <span class="ml-3 text-sm">{{item}}</span>
+                  </li>
+                  {{/each}}
+                </ul>
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section cta-section" data-aos="fade-up">
+        <div class="container">
+          <h2 class="section-title">Get started today</h2>
+          <p class="section-desc cta-desc">
+            It's time to take control of your books. Buy our software so you can
+            feel like you're doing something productive.
+          </p>
+          <button class="btn cta-btn">Get 6 months free</button>
+        </div>
+      </section>
+      <section class="section faq-section" data-aos="fade-up">
+        <div class="container">
+          <div class="section-header text-left">
+            <h2 class="section-title">Frequently asked questions</h2>
+            <p class="section-desc">
+              If you can't find what you're looking for, email our support team
+              and if you're lucky someone will get back to you.
+            </p>
+          </div>
+          <div class="faq-body">
+            <ul class="faq-list">
+              {{#each faq}}
+              <li>
+                <h4 class="faq-q">{{q}}</h4>
+                <p class="faq-a">{{a}}</p>
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="/">
+        <img class="footer-logo" src="/assets/icons/logo.svg" alt="TaxPal" />
+      </a>
+      <span class="footer-copyright">
+        Copyright © 2022 TaxPal. All rights reserved.
+      </span>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

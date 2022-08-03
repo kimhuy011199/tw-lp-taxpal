@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-2xl px-4 lg:max-w-7xl;
+  }
+  .page-title {
+    @apply px-2 font-heading text-5xl font-medium leading-tight text-dark sm:text-7xl sm:leading-tight lg:w-240;
+  }
+  .section {
+    @apply py-20 sm:py-28;
+  }
+  .section-header {
+    @apply text-left sm:text-center;
+  }
+  .section-title {
+    @apply pb-6 font-heading text-3xl font-normal sm:pb-8 sm:text-4xl;
+  }
+  .section-desc {
+    @apply text-lg;
+  }
+  .btn {
+    @apply rounded-full px-6 py-3 transition-all duration-300;
+  }
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-secondary;
+  }
+  .btn-outline {
+    @apply border border-gray1 bg-transparent text-dark hover:border-gray2;
+  }
+  .backdrop {
+    @apply fixed inset-0 bg-gray1 opacity-50;
+  }
+}
+
+/* HEADER */
+.header {
+  @apply mx-auto max-w-7xl py-6 px-4 sm:py-10;
+}
+.nav {
+  @apply flex items-center justify-between;
+}
+.nav-list {
+  @apply absolute inset-4 top-20 bottom-auto z-20 flex flex-col gap-4 rounded-2xl border border-gray2 bg-white py-8 shadow-2xl md:relative md:inset-0 md:flex-row md:border-none md:py-0 md:shadow-none;
+}
+.nav-link {
+  @apply block w-full rounded-md px-6 py-3 text-center text-lg font-normal transition-all duration-300 hover:bg-gray5 md:text-base;
+}
+.nav-logo {
+  @apply h-10 md:ml-4;
+}
+
+/* SECTION INTRO */
+.intro-section {
+  @apply mx-auto flex max-w-4xl flex-col items-center gap-5 py-20 px-4 text-center sm:py-28;
+}
+.intro-highlight {
+  @apply relative inline-block text-primary;
+}
+.intro-line {
+  @apply absolute top-10 -z-10 opacity-50 sm:top-14;
+}
+.intro-desc {
+  @apply max-w-xl;
+}
+.intro-action {
+  @apply mt-4 flex gap-4;
+}
+
+/* SECTION COMPANY */
+.company-section {
+  @apply py-16;
+}
+.company-title {
+  @apply text-center font-heading;
+}
+.company-list {
+  @apply mx-auto mt-8 grid grid-cols-2 justify-center justify-items-center gap-y-10 md:grid md:grid-cols-3 md:gap-10 lg:flex;
+}
+
+/* SECTION APP */
+.app-section {
+  @apply overflow-hidden bg-[url('/assets/images/background-1.jpg')] bg-cover text-white;
+}
+.app-body {
+  @apply mt-12 grid grid-cols-1 items-center gap-4 sm:mt-20 sm:grid-cols-12 sm:gap-0 lg:-mx-16 lg:mx-0;
+}
+.app-item {
+  @apply relative max-w-xl cursor-pointer py-6 pl-8 pr-12;
+}
+.app-item-bg.active {
+  @apply absolute inset-0 rounded-r-2xl rounded-l-2xl border border-primary bg-white opacity-10 sm:rounded-r-none;
+}
+.app-title {
+  @apply mb-3 font-heading font-normal;
+}
+.app-text {
+  @apply text-sm;
+}
+.app-img {
+  @apply w-280 rounded-3xl lg:w-280;
+  max-width: unset;
+}
+
+/* SECTION FEATURES */
+.features-list {
+  @apply mt-12 grid grid-cols-1 gap-8 lg:grid-cols-3;
+}
+.features-title {
+  @apply mb-4 mt-6 font-heading text-lg font-light;
+}
+.features-text {
+  @apply text-gray3;
+}
+.features-icon {
+  @apply rounded-full bg-white shadow-md;
+}
+
+/* SECTION PRICES */
+.prices-section {
+  @apply bg-dark text-white;
+}
+.prices-desc {
+  @apply text-gray3;
+}
+.prices-list {
+  @apply -mx-4 mt-16 grid grid-cols-1 gap-4 lg:mx-0 lg:grid-cols-3;
+}
+.prices-item {
+  @apply rounded-3xl p-8;
+}
+.prices-price {
+  @apply font-heading text-5xl font-normal;
+}
+.prices-title {
+  @apply my-4 font-heading text-lg font-normal;
+}
+.prices-text {
+  @apply max-w-full text-gray3 lg:max-w-xs;
+}
+.prices-sub-list {
+  @apply flex flex-col gap-3;
+}
+.prices-check {
+  @apply h-6 w-6;
+}
+.prices-btn {
+  @apply my-8 block w-full border border-gray4 p-2 font-medium text-white transition-all hover:border-gray3;
+}
+.prices-item.active {
+  @apply order-first bg-primary lg:order-none;
+}
+.prices-item.active .prices-text {
+  @apply text-white;
+}
+.prices-item.active .prices-btn {
+  @apply border-white bg-white text-primary hover:bg-gray1;
+}
+.prices-highlight {
+  @apply relative inline-block;
+}
+.prices-line {
+  @apply absolute top-6 opacity-40;
+}
+
+/* SECTION FAQ */
+.faq-section {
+  @apply overflow-hidden bg-[url('/assets/images/background-3.jpg')] bg-cover bg-center;
+}
+.faq-list {
+  @apply mt-10;
+}
+.faq-q {
+  @apply font-heading text-lg font-normal;
+}
+.faq-a {
+  @apply mt-3 mb-8;
+}
+
+/* SECTION CTA */
+.cta-section {
+  @apply overflow-hidden bg-[url('/assets/images/background-2.jpg')] bg-cover bg-center text-center text-white;
+}
+.cta-desc {
+  @apply mx-auto max-w-2xl text-center;
+}
+.cta-btn {
+  @apply mt-10 bg-white font-medium text-primary;
+}
+
+/* FOOTER */
+.footer {
+  @apply mx-auto flex max-w-2xl flex-col items-center justify-between gap-6 px-4 py-10 sm:flex-row lg:max-w-7xl;
+}
+.footer-logo {
+  @apply h-12 sm:h-10;
+}

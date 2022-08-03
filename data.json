@@ -1,0 +1,123 @@
+{
+  "nav": [
+    { "text": "Features", "link": "/" },
+    { "text": "Testimonials", "link": "/" },
+    { "text": "Pricing", "link": "/" }
+  ],
+  "companies": [
+    { "img": "/assets/icons/company-1.svg", "alt": "Transistor" },
+    { "img": "/assets/icons/company-2.svg", "alt": "Tuple" },
+    { "img": "/assets/icons/company-3.svg", "alt": "StaticKit" },
+    { "img": "/assets/icons/company-4.svg", "alt": "Mirage" },
+    { "img": "/assets/icons/company-5.svg", "alt": "Laravel" },
+    { "img": "/assets/icons/company-6.svg", "alt": "Statamic" }
+  ],
+  "app": [
+    {
+      "first": true,
+      "id": "app-1",
+      "title": "Payroll",
+      "content": "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported."
+    },
+    {
+      "id": "app-2",
+      "title": "Claim expenses",
+      "content": "All of your receipts organized into one place, as long as you don't mind typing in the data by hand."
+    },
+    {
+      "id": "app-3",
+      "title": "VAT handling",
+      "content": "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need."
+    },
+    {
+      "id": "app-4",
+      "title": "Reporting",
+      "content": "Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it."
+    }
+  ],
+  "features": [
+    {
+      "img": "/assets/icons/feature-1.svg",
+      "title": "Stay on top of things with always up-to-date reporting features.",
+      "content": "We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity."
+    },
+    {
+      "img": "/assets/icons/feature-2.svg",
+      "title": "Never lose track of what's in stock with accurate inventory tracking.",
+      "content": "We don't offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure."
+    },
+    {
+      "img": "/assets/icons/feature-3.svg",
+      "title": "Organize all of your contacts, service providers, and invoices in one place.",
+      "content": "This also isn't actually a feature, it's just some friendly advice. We definitely recommend that you do this, you'll feel really organized and professional."
+    }
+  ],
+  "prices": [
+    {
+      "active": false,
+      "price": "$9",
+      "title": "Starter",
+      "text": "Good for anyone who is self-employed and just getting started.",
+      "btn": "Get started",
+      "list": [
+        { "item": "Send 10 quotes and invoices" },
+        { "item": "Connect up to 2 bank accounts" },
+        { "item": "Track up to 15 expenses per month" },
+        { "item": "Manual payroll support" },
+        { "item": "Export up to 3 reports" }
+      ]
+    },
+    {
+      "active": true,
+      "price": "$15",
+      "title": "Small business",
+      "text": "Perfect for small / medium sized businesses.",
+      "btn": "Get started",
+      "list": [
+        { "item": "Send 25 quotes and invoices" },
+        { "item": "Connect up to 5 bank accounts" },
+        { "item": "Track up to 50 expenses per month" },
+        { "item": "Automated payroll support" },
+        { "item": "Export up to 12 reports" },
+        { "item": "Bulk reconcile transactions" },
+        { "item": "Track in multiple currencies" }
+      ]
+    },
+    {
+      "active": false,
+      "price": "$39",
+      "title": "Enterprise",
+      "text": "For even the biggest enterprise companies.",
+      "btn": "Get started",
+      "list": [
+        { "item": "Send unlimited quotes and invoices" },
+        { "item": "Connect up to 15 bank accounts" },
+        { "item": "Track up to 200 expenses per month" },
+        { "item": "Automated payroll support" },
+        { "item": "Export up to 25 reports, including TPS" }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What was that testimonial about tax fraud all about?",
+      "a": "TaxPal is just a software application, ultimately your books are your responsibility."
+    },
+    {
+      "q": "TaxPal sounds horrible but why do I still feel compelled to purchase?",
+      "a": "This is the power of excellent visual design. You just can't resist it, no matter how poorly it actually functions."
+    },
+    {
+      "q": "I found other companies called TaxPal, are you sure you can use this name?",
+      "a": "Honestly not sure at all. We haven't actually incorporated or anything, we just thought it sounded cool and made this website."
+    },
+    {
+      "q": "How do you generate reports?",
+      "a": "You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons."
+    },
+    {
+      "q": "I lost my password, how do I get into my account?",
+      "a": "Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information."
+    }
+  ]
+}
